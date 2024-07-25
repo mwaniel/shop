@@ -6,7 +6,7 @@
 		<form action="{{route('category-store', 'sub-category')}}" method="POST">
         @csrf
         <div>
-        	<input type="hidden" name="category_id" value="{{$result['id']}}">
+        	<input type="hidden" name="category_id" value="{{$result['category']['id']}}">
         </div>
         <div class="form-group">
             <label class="form-label">Sub - Category Name</label>
